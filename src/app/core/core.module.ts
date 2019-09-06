@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { TrainersComponent } from './trainers/trainers.component';
 import { TrainerProfileComponent } from './trainer-profile/trainer-profile.component';
+import { MenuComponent } from './menu/menu.component';
+import { QuestionFormComponent } from './question-form/question-form.component';
 
 
 @NgModule({
@@ -24,10 +26,14 @@ import { TrainerProfileComponent } from './trainer-profile/trainer-profile.compo
         HomeComponent,
         TrainersComponent,
         TrainerProfileComponent,
+        MenuComponent,
+        QuestionFormComponent,
       ],
     exports: [
         RouterModule,
-        LoginComponent
+        LoginComponent,
+        MenuComponent,
+        QuestionFormComponent
     ],
     providers: [
     ]

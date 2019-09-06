@@ -21,7 +21,7 @@ export class TrainersComponent implements OnInit {
       lastName: 'Lee',
       experience: 5,
       specialization: 'fat loss and muscle building',
-      image: '../assets/pictures/69703589_369864427280414_3891600967040237568_n.jpg'
+      image: '../assets/pictures/kane.jpg'
     }
   ];
 
