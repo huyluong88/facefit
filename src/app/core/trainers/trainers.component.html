@@ -1,0 +1,33 @@
+<div class="section">
+  <div class="columns is-mobile">
+    <div class="column" *ngFor="let heading of headings">
+      <span class="is-size-5 has-text-weight-bold">
+        {{ heading }}
+      </span>
+    </div>
+  </div>
+
+  <div *ngFor="let trainer of trainers">
+    <div class="columns is-mobile">
+      <div class="column">
+        <figure class="image is-16x16">
+          <img class="is-rounded" [src]="trainer.image">
+        </figure>
+      </div>
+      <div class="column">
+        <span class="name" (click)="routeToProfile()">
+          {{ trainer.firstName }}
+        </span>
+      </div>
+      <div class="column">
+        {{ trainer.lastName }}
+      </div>
+      <div class="column">
+        {{ trainer.experience }}
+      </div>
+      <div class="column">
+        {{ trainer.specialization }}
+      </div>
+    </div>
+  </div>
+</div>
